@@ -1,0 +1,96 @@
+html {
+	font: 100%/1.5 helvetica, arial;
+	background: white;
+}
+body {
+	margin: 0;
+	padding: 0;
+	background-image: linear-gradient()
+}
+h1 {
+	font-size: 2.25em;
+	line-height: 1.3333333em;
+	margin: .6666666em 0;
+}
+h2 {
+	font-size: 1.75em;
+	line-height: 1.142857143em;
+	margin: .857142857em 0;
+}
+h3 {
+	font-size: 1.25em;
+}
+p {
+	margin: 1.5em 0;
+	text-align: justify;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	-o-hyphens: auto;
+	hyphens: auto;
+}
+.grid-content,
+.grid-aside {
+	max-width: 39em;
+	margin: 0;
+	padding: 0 1em;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+blockquote {
+	font-size: 1.25em;
+	margin: 0 0 0 1em;
+	font-style: italic;
+}
+.measure {
+	overflow: hidden;
+}
+
+/* width of the content + white-space */
+@media (min-width: 39em) {
+	:root {
+		font-size: 100%;
+	}
+	body {
+		max-width: 56em;
+		background: white;
+		margin: 0 auto;
+	}
+	.grid-aside,
+	.grid-content {
+		width: 70%;
+		float: left;
+		
+	}
+	.grid-aside {
+		width: 30%;
+		max-width: 17em;
+		margin: 0;
+	}
+}
+
+/* Optional third column for negative indenting */
+@media (min-width: 56em) {
+	body {
+		max-width: 73em;
+	}
+	.grid-content {
+		width: 54%;
+		margin-left: 23%;
+	}
+	.grid-content h1 {
+		margin-left: -43%;
+	}
+	blockquote {
+		font-size: 2em;
+		margin: 0 0 0 -21.5%;
+	}
+	.grid-aside {
+		width: 23%;
+		max-width: 17em;
+		margin: 0;
+	}
+}
