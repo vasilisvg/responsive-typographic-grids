@@ -1,0 +1,64 @@
+/* 
+Only the basic styles in this sheet. 
+Things that are affected by type, like mediaqueries and widths 
+are within specialized style sheets.
+*/
+
+html {
+	background: white;
+}
+body {
+	background: white;
+	margin: 0;
+	padding: 0;
+}
+h1 {
+	font-size: 2.25em;
+	line-height: 1.3333333em;
+	margin: .6666666em 0;
+}
+h2 {
+	font-size: 1.75em;
+	line-height: 1.142857143em;
+	margin: .857142857em 0;
+}
+h3 {
+	font-size: 1.25em;
+}
+p {
+	margin: 1.5em 0;
+	text-align: justify;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	-o-hyphens: auto;
+	hyphens: auto;
+}
+.grid {
+	margin: 0;
+	padding: 0 1em;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 0 0 0 1em;
+	font-style: italic;
+}
+.fontSelect {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	opacity: .5;
+	background: white;
+}
+.fontSelect:hover {
+	opacity: 1;
+}

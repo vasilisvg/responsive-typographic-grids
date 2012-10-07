@@ -1,0 +1,57 @@
+/* 
+
+
+*/
+
+html {
+	font: 100%/1.5 tahoma;
+}
+
+/* 
+See measure table 
+Max-width is character count plus padding
+*/
+.grid-content,
+.grid-aside {
+	max-width: 36.5em;
+}
+
+/* width of the content + white-space */
+@media (min-width: 36.5em) {
+	body {
+		max-width: 53em;
+		margin: 0 auto;
+	}
+	.grid-aside,
+	.grid-content {
+		width: 70%;
+		float: left;
+		
+	}
+	.grid-aside {
+		width: 30%;
+		max-width: 16.5em;
+	}
+}
+
+/* Optional third column for negative indenting */
+@media (min-width: 53em) {
+	.canbe-big {
+		max-width: 69.5em;
+	}
+	.canbe-big .grid-content {
+		width: 54%;
+		margin-left: 23%;
+	}
+	.canbe-big .grid-content h1 {
+		margin-left: -43%;
+	}
+	.canbe-big blockquote {
+		font-size: 2em;
+		margin: 0 0 0 -21.5%;
+	}
+	.canbe-big .grid-aside {
+		width: 23%;
+		margin: 0;
+	}
+}
